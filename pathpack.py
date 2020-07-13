@@ -1,8 +1,14 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 
-from autosys_pathlib import Path
+from pathlib3 import Path
 from dataclasses import dataclass, field, Field
+from sys import path as python_path
+import os
+
+p = os.path(__file__)
+
+print(p)
 
 
 class PathPackError(IOError):

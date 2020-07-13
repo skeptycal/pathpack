@@ -457,7 +457,7 @@ class _PosixFlavour(_Flavour):
     sep = "/"
     altsep = ""
     has_drv = False
-    pathmod = os.posix
+    pathmod = posixpath
 
     is_supported = os.name != "nt"
 
@@ -469,6 +469,7 @@ class _PosixFlavour(_Flavour):
             # "A pathname that begins with two successive slashes may be
             # interpreted in an implementation-defined manner, although more
             # than two leading slashes shall be treated as a single slash".
+            # TODO - wtf is all this mess?
             if len(part) - len(stripped_part) == 2:
                 return "", sep * 2, stripped_part
             else:
