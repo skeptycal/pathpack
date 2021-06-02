@@ -26,7 +26,7 @@ six==1.15.0
 toml==0.10.1
 tox==3.16.1
 tox-travis==0.12
-urllib3==1.25.9
+urllib3==1.26.5
 virtualenv==20.0.26
 wcwidth==0.2.5
 wrapt==1.12.1
